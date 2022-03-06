@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void quicksort( int arr[], int first, int last)
+void quickSort( int arr[], int first, int last)
 {
 
    int mid, f = first, l = last;
@@ -19,27 +19,10 @@ void quicksort( int arr[], int first, int last)
         l--;
         };
     } while (f < l);
-    if (first <  l) quicksort(arr, first, l);
-    if (f < last) quicksort(arr, f, last);
+    if (first <  l) quickSort(arr, first, l);
+    if (f < last) quickSort(arr, f, last);
 }
 
-int main()
-{
-    int n;
-    cin >> n;
-    int m[n];
-
-    for (int i = 0; i < n ; i++)
-    {
-        cin >> m[i];
-    };
-    int first = 0, last = n-1 ;
-    quicksort(m, first, last);
-    for (int i = 0; i < n ; i++)
-    {
-        cout << m[i] << " ";
-    };
-    return 0;
+void quickSort(int arr[], int n){
+    quickSort(arr, 0, n - 1);
 }
-
-

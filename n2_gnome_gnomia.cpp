@@ -24,24 +24,3 @@ void gnom(int arr[], int n)
         }
     }
 }
-
-int main()
-{
-    int n;
-    cin >> n;
-    int m[n];
-
-    for (int i = 0; i < n ; i++)
-    {
-        cin >> m[i];
-    };
-    gnom(m, n);
-
-    for (int i = 0; i < n ; i++)
-    {
-        cout << m[i] << " ";
-    };
-    return 0;
-}
-
-

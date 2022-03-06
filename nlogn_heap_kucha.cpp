@@ -30,21 +30,3 @@ void heapSort(int arr[], int n)
     }
 }
 
-int main()
-{
-    int n;
-    cin >> n;
-    int m[n];
-
-    for (int i = 0; i < n ; i++)
-    {
-        cin >> m[i];
-    };
-    int first = 0, last = n-1 ;
-    quicksort(m, first, last);
-    for (int i = 0; i < n ; i++)
-    {
-        cout << m[i] << " ";
-    };
-    return 0;
-}
